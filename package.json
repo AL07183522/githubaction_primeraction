@@ -1,12 +1,14 @@
 {
-  "name": "mi-proyecto",
+  "name": "githubaction_primeraction",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build index.js -o dist"
+  },
   "dependencies": {
     "@actions/core": "^1.10.0"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.38.3"
+    "@vercel/ncc": "^0.38.0"
   }
 }
